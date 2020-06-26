@@ -96,3 +96,13 @@ test(un_abuelo_con_un_hijo_sin_hijos_no_esta_hasta_las_manos, fail):-
 
 :-end_tests(abuelosHastaLasManos).
 
+
+:-begin_tests(ejemplo_inversibilidad_multiple).
+
+test(padreDe_es_totalmente_inversible, nondet):-
+  padreDe(Padre, Hijo),
+  assertion(Padre == homero),
+  assertion(Hijo == bart).
+
+:-end_tests(ejemplo_inversibilidad_multiple).
+
